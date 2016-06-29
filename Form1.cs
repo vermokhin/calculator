@@ -17,9 +17,19 @@ namespace Calculator
 			InitializeComponent();
 		}
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox4.Text = (decimal.Parse(textBox1.Text) - decimal.Parse(textBox2.Text)).ToString();
+            }
+            catch(Exception)
+            {}
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             textBox3.Text = (int.Parse(textBox1.Text) + int.Parse(textBox2.Text)).ToString();
         }
-    }
+	}
 }
