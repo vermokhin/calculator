@@ -32,4 +32,10 @@ namespace Calculator
             textBox3.Text = (int.Parse(textBox1.Text) + int.Parse(textBox2.Text)).ToString();
         }
 	}
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox5.Text = (Convert.ToInt32(textBox1.Text) * Convert.ToInt32(textBox2.Text)).ToString();
+        }
+    }
 }
